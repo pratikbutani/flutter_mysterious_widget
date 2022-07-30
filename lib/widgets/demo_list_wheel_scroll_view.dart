@@ -15,24 +15,25 @@ class _DemoListWheelScrollViewState extends State<DemoListWheelScrollView> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          body: ListWheelScrollView(
-        itemExtent: 150,
-        offAxisFraction: 0,
-        diameterRatio: 3,
-        children: List.generate(
-          50,
-          (index) => Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 200,
-              width: double.maxFinite,
-              child: Center(child: Text('Index $index')),
-              color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
-                  .withOpacity(1.0),
+        body: ListWheelScrollView(
+          itemExtent: 150,
+          offAxisFraction: 0,
+          diameterRatio: 3,
+          children: List.generate(
+            50,
+            (index) => Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                width: double.maxFinite,
+                child: Center(child: Text('Index $index')),
+                color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
+                    .withOpacity(1.0),
+              ),
             ),
           ),
         ),
-      )),
+      ),
     );
   }
 }

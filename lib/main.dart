@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:new_widgets/widgets/demo_fractionally_sized_box.dart';
 
 import 'widgets/demo_error_widget.dart';
 
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       builder: (context, widget) {
         ErrorWidget.builder = (FlutterErrorDetails errorDetails) {
           return DemoErrorWidget(
-            errorDetails: errorDetails,
+            errorDetails: errorDetails, // If you want to pass error details
           );
         };
         return widget!;
@@ -26,8 +25,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: const MyHomePage(title: 'Flutter Festival'),
-      home: const DemoFractionallySizedBox(),
+      home: const MyHomePage(title: 'Flutter Ahmedabad'),
+      // home: const DemoExactAssetsImages(),
+      // home: const DemoStatefulBuilder(),
+      // home: const FractionallySizedBox(),
+      // home: const DemoNavigationRail(),
+      // home: const DemoImageFilter(),
+      // home: const DemoNavigationRail(),
     );
   }
 }
@@ -54,24 +58,13 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-
-    /// Testing for demo error widgets
-    //await Future.value(true);
     _incrementCounter();
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
       body: Center(

@@ -9,7 +9,7 @@ class DemoErrorWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isDebugModeCheck = !kDebugMode;
+    bool isDebugModeCheck = kDebugMode;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(

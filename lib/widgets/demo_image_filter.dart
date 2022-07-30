@@ -22,11 +22,12 @@ class _DemoImageFilterState extends State<DemoImageFilter> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ImageFiltered(
-              imageFilter: ImageFilter.blur(sigmaX: 5),
-              child: const Text(
-                'Flutter Festival',
-                style: TextStyle(fontSize: 30),
-              )),
+            imageFilter: ImageFilter.blur(sigmaX: 5),
+            child: const Text(
+              'Flutter Festival',
+              style: TextStyle(fontSize: 30),
+            ),
+          ),
           SizedBox(
             width: double.maxFinite,
             child: ImageFiltered(
