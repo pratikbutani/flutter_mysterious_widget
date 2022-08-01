@@ -1,6 +1,6 @@
-# new_widgets
+# flutter_mysterious_widget
 
-A new Flutter project.
+Flutter Mysterious Widgets is a collection of new widgets which is might be unknown for developers.
 
 ## Getting Started
 
